@@ -1,1 +1,1 @@
-# docker-ubuntu16-nginx-php7
+# Docker: Ubuntu 16 + Nginx + PHP7
