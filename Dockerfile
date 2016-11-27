@@ -31,6 +31,8 @@ RUN apt-get install -y php-mongodb
 RUN apt-get install -y php-redis
 RUN apt-get install -y cron
 RUN apt-get install -y supervisor
+RUN systemctl enable supervisor
+RUN systemctl start supervisor
 
 ENV ALLOW_OVERRIDE **False**
 
