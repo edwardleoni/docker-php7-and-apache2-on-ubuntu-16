@@ -30,6 +30,7 @@ RUN apt-get install -y composer
 RUN apt-get install -y php-mongodb
 RUN apt-get install -y php-redis
 RUN apt-get install -y cron
+RUN apt-get install -y supervisor
 
 ENV ALLOW_OVERRIDE **False**
 
