@@ -29,6 +29,7 @@ RUN apt-get install -y pkg-config libssl-dev libsslcommon2-dev
 RUN apt-get install -y composer
 RUN apt-get install -y php-mongodb
 RUN apt-get install -y php-redis
+RUN apt-get install -y cron
 
 ENV ALLOW_OVERRIDE **False**
 
