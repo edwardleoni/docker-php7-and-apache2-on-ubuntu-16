@@ -18,6 +18,7 @@ RUN apt-get -yq install php-common
 RUN apt-get -yq install php-curl 
 RUN apt-get -yq install php-pear
 RUN apt-get -yq install php-dom 
+RUN apt-get -yq install php-zip
 RUN apt-get install -y php-xdebug
 RUN apt-get install -y sendmail
 RUN apt-get install -y php-imagick
