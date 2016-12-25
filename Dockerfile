@@ -33,7 +33,6 @@ RUN apt-get install -y php-redis
 RUN apt-get install -y cron
 RUN apt-get install -y supervisor
 RUN systemctl enable supervisor
-RUN service start supervisor
 
 ENV ALLOW_OVERRIDE **False**
 
