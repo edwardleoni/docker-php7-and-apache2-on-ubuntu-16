@@ -61,6 +61,7 @@ RUN a2enmod proxy_balancer
 RUN a2enmod proxy_connect
 RUN a2enmod proxy_html
 RUN a2enmod xml2enc
+RUN a2enmod ssl
 
 RUN service apache2 restart
 ADD hosts.sh /home/hosts.sh
