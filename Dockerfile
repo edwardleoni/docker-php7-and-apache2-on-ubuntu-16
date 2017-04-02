@@ -1,5 +1,5 @@
 FROM ubuntu:xenial
-MAINTAINER Eduardo Leoni <eduardoleoni@outlook.com>
+MAINTAINER Eduardo Leoni <mail@edwardleoni.comm>
 
 # Install base packages
 RUN apt-get update
