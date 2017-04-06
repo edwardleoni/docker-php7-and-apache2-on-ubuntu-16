@@ -4,21 +4,23 @@ MAINTAINER Edward Leoni <mail@edwardleoni.comm>
 # Install base packages
 RUN apt-get update
 RUN apt-get upgrade -y
+RUN apt-get install software-properties-common python-software-properties -y
+RUN add-apt-repository ppa:ondrej/php -y
 RUN apt-get update
 RUN apt-get -yq install curl
 RUN apt-get -yq install apache2
-RUN apt-get -yq install php
-RUN apt-get -yq install php-mbstring
-RUN apt-get -yq install libapache2-mod-php
-RUN apt-get -yq install php-mysql
-RUN apt-get -yq install mysql-client
-RUN apt-get -yq install php-mcrypt 
-RUN apt-get -yq install php-gd 
-RUN apt-get -yq install php-common 
-RUN apt-get -yq install php-curl 
-RUN apt-get -yq install php-pear
-RUN apt-get -yq install php-dom 
-RUN apt-get -yq install php-zip
+RUN apt-get -yq install php7.1 --allow-unauthenticated
+RUN apt-get -yq install php-mbstring --allow-unauthenticated
+RUN apt-get -yq install libapache2-mod-php7.1 --allow-unauthenticated
+RUN apt-get -yq install php7.1-mysql --allow-unauthenticated
+RUN apt-get -yq install mysql-client --allow-unauthenticated
+RUN apt-get -yq install php7.1-mcrypt --allow-unauthenticated
+RUN apt-get -yq install php7.1-gd --allow-unauthenticated
+RUN apt-get -yq install php7.1-common --allow-unauthenticated
+RUN apt-get -yq install php7.1-curl --allow-unauthenticated
+RUN apt-get -yq install php7.1-pear --allow-unauthenticated
+RUN apt-get -yq install php7.1-dom --allow-unauthenticated
+RUN apt-get -yq install php7.1-zip --allow-unauthenticated
 RUN apt-get install -y php-xdebug
 RUN apt-get install -y sendmail
 RUN apt-get install -y php-imagick
