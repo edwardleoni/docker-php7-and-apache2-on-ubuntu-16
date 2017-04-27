@@ -20,22 +20,22 @@ RUN apt-get -yq install php7.1-mcrypt --allow-unauthenticated
 RUN apt-get -yq install php7.1-gd --allow-unauthenticated
 RUN apt-get -yq install php7.1-common --allow-unauthenticated
 RUN apt-get -yq install php7.1-curl --allow-unauthenticated
-RUN apt-get -yq install php7.1-pear --allow-unauthenticated
+RUN apt-get -yq install php-pear --allow-unauthenticated
 RUN apt-get -yq install php7.1-dom --allow-unauthenticated
 RUN apt-get -yq install php7.1-zip --allow-unauthenticated
-RUN apt-get -yq install php-sqlite3 --allow-unauthenticated
 RUN apt-get -yq install php7.1-sqlite3
-RUN apt-get install -y php-xdebug
+RUN apt-get install -y php-xdebug --allow-unauthenticated
 RUN apt-get install -y sendmail
-RUN apt-get install -y php-imagick
+RUN apt-get install -y php-imagick --allow-unauthenticated
 RUN apt-get install -y aptitude
-RUN aptitude install -y libapache2-mod-proxy-html libxml2-dev
-RUN apt-get install -y php-dev
+RUN apt-get install -y apache2-bin
+RUN apt-get install -y libxml2-dev --allow-unauthenticated
+RUN apt-get install -y php-dev --allow-unauthenticated
 RUN apt-get install -y libcurl4-openssl-dev
 RUN apt-get install -y pkg-config libssl-dev libsslcommon2-dev
 RUN apt-get install -y composer
-RUN apt-get install -y php-mongodb
-RUN apt-get install -y php-redis
+RUN apt-get install -y php-mongodb --allow-unauthenticated
+RUN apt-get install -y php-redis --allow-unauthenticated
 RUN apt-get install -y cron
 RUN apt-get install -y supervisor
 RUN systemctl enable supervisor
